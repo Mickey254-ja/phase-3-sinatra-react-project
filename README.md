@@ -1,4 +1,28 @@
+1. Models
+	i. User - has_many :movies
+	ii.Movie - belogs_to :user
+2. Tables
+	i. users(username, password, email)
+	ii.movies(title, genre, year, rating, user_id)
+3. Controllers
+
+	a. Users
+		i. register(/newuser)
+		ii.login(/login)
+
+	b. Movies
+		i. create(/newmovie)
+		ii. user movies(/movies/:user_id)
+		iii. view all movies(/movies)
+		iv. search by title or year(/search/:term)
+		v. update details(/edit/:id)
+		vi. delete a movie(/delete/:id)
+
+
+
+
 # Phase 3 Project Guidelines
+
 
 ## Learning Goals
 
