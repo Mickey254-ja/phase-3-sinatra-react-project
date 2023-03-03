@@ -1,6 +1,6 @@
 1. Models
 	i. User - has_many :movies
-	ii.Movie - belogs_to :user
+	ii.Movie - belongs_to :user
 2. Tables
 	i. users(username, password, email)
 	ii.movies(title, genre, year, rating, user_id)
