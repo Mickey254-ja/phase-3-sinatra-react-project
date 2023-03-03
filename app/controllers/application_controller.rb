@@ -34,4 +34,15 @@ class ApplicationController < Sinatra::Base
       login_error    
     end
   end
+
+  # create a new movie
+  post '/newmovie/:id' do
+    movie = User.find(params[:id]).movies.create(
+      title: params[:title],
+      genre: params[:genre],
+      year: params[:year],
+      rating: params[:rating],
+    )
+    movie.to_json
+  end
 end
