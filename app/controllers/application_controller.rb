@@ -52,4 +52,9 @@ class ApplicationController < Sinatra::Base
     movies = Movie.where(user_id: user)
     movies.to_json
   end
+
+  # view all movies
+  get '/movies' do
+    movies = Movie.all.to_json
+  end
 end
