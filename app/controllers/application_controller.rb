@@ -84,7 +84,4 @@ class ApplicationController < Sinatra::Base
     movie.destroy
   end
 
-
-    
-
 end

@@ -19,3 +19,5 @@ puts "🌱 Seeding users, Please wait..."
     end
 
 end
+
+puts "🌱 Done seeding!"
