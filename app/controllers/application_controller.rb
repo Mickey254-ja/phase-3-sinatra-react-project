@@ -45,4 +45,11 @@ class ApplicationController < Sinatra::Base
     )
     movie.to_json
   end
+
+  # get a given users movies
+  get '/movies/:user_id' do
+    user = params[:user_id].to_i
+    movies = Movie.where(user_id: user)
+    movies.to_json
+  end
 end
