@@ -68,6 +68,17 @@ class ApplicationController < Sinatra::Base
       error_message = {error: "Could not find movie that matches search term"} 
       return error_message.to_json     
     end
-  end  
+  end
+
+   # update a movie's details
+  patch '/edit/:id/:id2' do
+    data = JSON.parse(request.body.read)
+    movie = User.find(params[:id]).movies
+    movie.find(params[:id2]).update(data)
+    movie.to_json
+  end
+
+
+    
 
 end
