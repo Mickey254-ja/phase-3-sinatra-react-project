@@ -78,6 +78,12 @@ class ApplicationController < Sinatra::Base
     movie.to_json
   end
 
+  # delete a movie from the site
+  delete '/delete/:id/:id2' do
+    movie = User.find(params[:id]).movies.find(params[:id2])
+    movie.destroy
+  end
+
 
     
 
