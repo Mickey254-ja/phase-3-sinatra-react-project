@@ -4,4 +4,9 @@ class ApplicationController < Sinatra::Base
   get "/" do
     "we are here"
   end
+
+  def login_error
+    @message = {error: "Invalid username or password"}
+    return @message.to_json
+  end
 end
