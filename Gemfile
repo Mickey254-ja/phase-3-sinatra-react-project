@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+gem 'sinatra-cross_origin', '~> 0.4.0'
+
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
@@ -39,6 +41,8 @@ group :development do
   gem "rerun"
 
   gem "pry"
+
+
 end
 
 # These gems will only be used when we are running tests
