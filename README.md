@@ -1,3 +1,7 @@
+[Client-side](./https://github.com/Mickey254-ja/Client-movies)
+
+###Directory Setup
+
 1. Models
 	i. User - has_many :movies
 	ii.Movie - belongs_to :user
