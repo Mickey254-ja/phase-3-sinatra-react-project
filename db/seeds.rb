@@ -20,6 +20,30 @@ puts "🌱 Seeding users, Please wait..."
 
 end
 Movie.create([
+  {
+    title: "Wakanda Forever",
+    genre: "Drama",
+    image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXyVL7YxRQGNTX1PJyo7qshPYm8efimAYK9g&usqp=CAU",
+    rating: 10,
+    year: 2022,
+    user_id: 2
+    },
+    {
+    title: "Mickey Mouse",
+    genre: "Cartoon",
+    image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm_jLkmo8zhStALs7R9sB5jLf17sI6SJZI4w&usqp=CAU",
+    rating: 9,
+    year: 1999,
+    user_id: 5
+    },
+    {
+    title: "The Fallout",
+    genre: "Romance",
+    image_url: "https://i.ytimg.com/vi/docDEPufIxk/maxresdefault.jpg",
+    rating: 10,
+    year: 2012,
+    user_id: 8
+    },
     {
     title: "John Wick",
     genre: "Action",
