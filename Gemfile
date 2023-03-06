@@ -18,6 +18,8 @@ gem "sinatra-activerecord"
 # https://github.com/rack/rack-contrib
 gem "rack-contrib", "~> 2.3"
 
+gem "rack-cors", "~> 2.0"
+
 # Run common tasks from the command line
 # https://github.com/ruby/rake
 gem "rake"

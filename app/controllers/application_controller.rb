@@ -1,20 +1,20 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   # Add your routes here
-  configure do 
-    enable :cross_origin
-  end
+  # configure do 
+  #   enable :cross_origin
+  # end
 
-  before do 
-    response.headers[Access-Control-Allow-Origin] = "*"
-  end
+  # before do 
+  #   response.headers[Access-Control-Allow-Origin] = "*"
+  # end
 
-  options "*" do
-    response.headers["Allow"] = "GET, PUT, POST, DELETE, OPTIONS"
-    response.headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type, Accept, X-User-Email, X-Auth-Token"
-    response.headers["Access-Control-Allow-Origin"] = "*"
-    200
-  end
+  # options "*" do
+  #   response.headers["Allow"] = "GET, PUT, POST, DELETE, OPTIONS"
+  #   response.headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type, Accept, X-User-Email, X-Auth-Token"
+  #   response.headers["Access-Control-Allow-Origin"] = "*"
+  #   200
+  # end
 
   get "/" do
     "let's start"
@@ -64,7 +64,8 @@ class ApplicationController < Sinatra::Base
   end
   # view all movies
   get '/movies' do
-    movies = Movie.all.to_json
+    movies = Movie.all
+    movies.to_json
   end
   # view all users
   get '/users' do
