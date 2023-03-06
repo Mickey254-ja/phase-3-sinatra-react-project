@@ -39,6 +39,7 @@ class ApplicationController < Sinatra::Base
       genre: params[:genre],
       year: params[:year],
       rating: params[:rating],
+      image_url: params[:image_url]
     )
     movie.to_json
   end

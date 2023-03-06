@@ -33,9 +33,13 @@ GEM
     minitest (5.14.4)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.8)
+    pg (1.4.6)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    puma (6.1.1)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-contrib (2.3.0)
       rack (~> 2.0)
@@ -76,7 +80,6 @@ GEM
       activerecord (>= 4.1)
       sinatra (>= 1.0)
     sinatra-cross_origin (0.4.0)
-    sqlite3 (1.4.2)
     tilt (2.0.10)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -90,7 +93,9 @@ DEPENDENCIES
   activerecord (~> 6.1)
   database_cleaner
   faker (~> 2.18)
+  pg (~> 1.4)
   pry
+  puma (~> 6.1, >= 6.1.1)
   rack-contrib (~> 2.3)
   rack-cors (~> 2.0)
   rack-test (~> 1.1)
@@ -102,7 +107,6 @@ DEPENDENCIES
   sinatra (~> 2.1)
   sinatra-activerecord
   sinatra-cross_origin (~> 0.4.0)
-  sqlite3 (~> 1.4)
 
 BUNDLED WITH
    2.4.7
