@@ -193,7 +193,16 @@ Movie.create([
     image_url: "https://m.media-amazon.com/images/M/MV5BNTVkMTFiZWItOTFkOC00YTc3LWFhYzQtZTg3NzAxZjJlNTAyXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
     year: 2019,
     user_id: 11
-  }
+  },
+  {
+    title: "Spongebob Squarepants",
+    genre: "Cartoon",
+    image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn3MOcqVnJccvnDPz67aC5B03XortsarMY0A&usqp=CAU",
+    rating: 8,
+    year: 2000,
+    user_id: 5
+    },
+
   
 ])
 
