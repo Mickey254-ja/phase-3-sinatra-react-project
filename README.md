@@ -1,4 +1,4 @@
-###Project's client side
+### Project's client side
 [Client-side-react-movies](./https://github.com/Mickey254-ja/Client-movies)
 
 ###Directory Setup
